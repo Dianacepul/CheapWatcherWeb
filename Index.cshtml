@@ -1,0 +1,234 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="section main" data-section-name="main" id="mainPage">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+        <div class="container">
+            <a class="navbar-brand nav-link" href="#mainPage"><img src="~/img/logo.png" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCheapWatcher" aria-controls="navbarCheapWatcher" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarCheapWatcher">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item fullscreen">
+                        <a class="nav-link " href="#prices">Feature</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Features
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#prices">Wholesale prices update</a>
+                            <a class="dropdown-item" href="#configuration">Price change configuration</a>
+                            <a class="dropdown-item" href="#updates&notifications">Updates every 24 hours & Notifications via e-mail</a>
+                            <a class="dropdown-item" href="#detailedReport">Detailed statistics</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tryIt">Try it now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="home" asp-action="pricing">Pricing</a>
+                    </li>
+                </ul>
+
+                <div class="buttons ">
+                    <a class="btn btn-primary" asp-controller="account" asp-action="login">Login</a>
+                    <a class="btn btn-primary" asp-controller="account" asp-action="register">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="second-menu nav fixed-top">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link " href="#prices">Wholesale prices update</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#configuration">Price change configuration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#updates&notifications">Updates every 24 hours & Notifications via e-mail</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#detailedReport">Detailed statistics</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="presentation container">
+        <h1>Real estate price tracking from any website</h1>
+        <h3>99% success rate of price recognition</h3>
+        <button type="button" class="btn btn-primary">Start for free</button><br />
+    </div>
+    <div class="group container">
+        <p>20 price tracking</p>
+        <img src="~/img/web-8.png" />
+        <p class="free">Free forever</p>
+    </div>
+    <div class="screen container"> <img src="~/img/web-9.png" /></div>
+</div>
+
+<div class="section prices" data-section-name="wholesale" id="prices">
+    <div class="normal container h-100 ">
+        <div class="row align-items-center h-100 ">
+            <div class="text col-sm-6 col-md-6 col-lg-6 my-auto">
+                <h1>Wholesale prices upload<br /></h1>
+                <p>
+                    Add from any e-commerce platform category link and our sophysticated analytic software tool will do the rest.<br /><br />
+                    Every product price, photo and name will be found on e-commerce website and uploaded to your watching froduct listing.
+                </p>
+            </div>
+            <div class="web col-sm-6 col-md-6 col-lg-6 my-auto ">
+                <img src="~/img/web-4.png" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section configuration" data-section-name="changing" id="configuration">
+    <div class="reversed container h-100">
+        <div class="row align-items-center h-100">
+            <div class="web col-sm-6 col-md-5 col-lg-6 my-auto">
+                <img src="~/img/web-5.png" />
+            </div>
+            <div class="text col-sm-6 col-md-7 col-lg-6 my-auto">
+                <h1>Price change configuration</h1>
+                <p>
+                    For every watcher product there options to get notifications via e-mail when price:
+                    drops, rises or even when product removed from e-commerce website.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section updates" data-section-name="updates" id="updates&notifications">
+    <div class="normal container h-100 ">
+        <div class="row align-items-center h-100">
+            <div class="text col-sm-6 col-md-6 col-lg-6 my-auto">
+                <h1>Updates every 24 hours & notifications via e-mail</h1>
+                <p>
+                    We will check every price every 24 hours. On your choosing we will inform about price change in general
+                    or in your interest area (price dropped, risen, out off stock).
+                </p>
+            </div>
+            <div class="web col-sm-6 col-md-6 col-lg-6 my-auto">
+                <img src="~/img/web-6.png" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section report" data-section-name="report" id="detailedReport">
+    <div class="reversed container h-100">
+        <div class="row align-items-center h-100">
+            <div class="web col-sm-6 col-md-6 col-lg-6 my-auto">
+                <img src="~/img/web-7.png" />
+            </div>
+            <div class="text col-sm-6 col-md-6 col-lg-6 my-auto">
+                <h1>Detailed report</h1>
+                <p>We will provide detailed statistics of every watched price, when price risen, dropped, how many time price changed happened.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section try" data-section-name="try" id="tryIt">
+    <div class="try container h-100">
+        <div class="row align-items-center h-100">
+            <div class="try col-sm-6 col-md-6 col-lg-6 my-auto">
+                <h1>Try it now</h1>
+                <h3>No user account is required</h3>
+                <div id="parsed-products">
+                    <input type="text" id="textInput" placeholder="Enter e-shop link here" /><br />
+                    <input type="submit" class="btn btn-primary" id="startButton" value="Start" />
+                    <div class="result"></div>
+                </div>
+            </div>
+            <div class="web col-sm-6 col-md-6 col-lg-6 my-auto">
+                <img src="~/img/web-7.png" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#startButton").click(function () {
+            var value = $("#textInput").val();
+            $.get("@Url.Action("ParseAnonymousUser", "Home")", { url: value })
+                .done(function (data, textStatus) {
+                    if (textStatus == 'success') {
+                        console.log(data);
+                        $("#parsed-products .result").html(data);
+                    }
+                })
+                .fail(function (xhr) {
+                    if (xhr.status == 404) {
+                        $.get("@Url.Action("ParseHeuristicAnonymousUser", "Home")", { url: value }, function (data) {
+                            console.log(data);
+                            $("#parsed-products .result").html(data);
+
+                        });
+                    }
+                })
+            })
+
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        $.scrollify({
+            section: ".section",
+        });
+    });
+</script>
+<script type="text/javascript">
+    $.scrollify({
+        section: ".section",
+        sectionName: "section-name",
+        interstitialSection: "",
+        easing: "easeOutExpo",
+        scrollSpeed: 1500,
+        offset: 0,
+        scrollbars: true,
+        standardScrollElements: "",
+        setHeights: true,
+        overflowScroll: true,
+        updateHash: true,
+        touchScroll: true,
+        before: function () { },
+        after: function () { },
+        afterResize: function () { },
+        afterRender: function () { }
+    });
+</script>
+<script type="text/javascript">
+    (function ($) {
+        $(document).ready(function () {
+
+            // hide .navbar first
+            $(".second-menu").hide();
+
+            // fade in .navbar
+            $(function () {
+                $(window).scroll(function () {
+
+                    // set distance user needs to scroll before we start fadeIn
+                    if ($(this).scrollTop() > 800) {
+                        $('.second-menu').fadeIn();
+                    } else {
+                        $('.second-menu').fadeOut();
+                    }
+                });
+            });
+
+        });
+    }(jQuery));
+</script>
